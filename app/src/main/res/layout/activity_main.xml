@@ -33,7 +33,7 @@
         android:textSize="30dp"
         android:textColor="#000"
         android:background="@drawable/radius" />
-<!--    test-->
+<!--    test2-->
 
 
 </LinearLayout>
