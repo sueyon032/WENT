@@ -32,7 +32,7 @@
         android:textSize="30dp"
         android:textColor="#000"
         android:background="@drawable/radius"/>
-
+<!---지수야 사랑?-->
 
 
 </LinearLayout>
