@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,13 +13,31 @@
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:layout_marginTop="100dp"
-            android:gravity="center"
-            android:text="01/12"
-            android:textSize="30dp" />
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="01"
+                android:textColor="#D0DFFF"
+                android:textStyle="bold"
+                android:textSize="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:text="/12"
+                android:textColor="#D2D2D2"
+                android:textSize="20dp" />
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
@@ -33,6 +50,7 @@
             android:textStyle="bold" />
 
         <Button
+            android:id="@+id/btn1"
             android:layout_marginTop="200px"
             android:layout_width="250dp"
             android:layout_height="65dp"
@@ -43,6 +61,7 @@
             android:backgroundTint="#F2CCFF"
             android:textSize="15dp"/>
         <Button
+            android:id="@+id/btn2"
             android:layout_marginTop="50px"
             android:layout_width="250dp"
             android:layout_height="65dp"
@@ -52,7 +71,17 @@
             android:textColor="@color/black"
             android:backgroundTint="#D0DFFF"
             android:textSize="15dp"/>
-    </LinearLayout>
 
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="5dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progress="50"
+            android:progressDrawable="@drawable/custom_progress_bar" />
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
