@@ -15,9 +15,10 @@
         android:layout_marginTop="190dp"/>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_gravity="center"
         android:text="당신에게 어울리는 여행지를\n추천해드립니다"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -32,7 +33,7 @@
         android:textSize="30dp"
         android:textColor="#000"
         android:background="@drawable/radius"/>
-<!---지 랑?-->
+
 
 
 </LinearLayout>
